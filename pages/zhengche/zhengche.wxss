@@ -1,0 +1,56 @@
+#zhengche {
+  border: 1px solid red;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#zhengche .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#zhengche .list .item-box {
+  width: 50%;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+#zhengche .list .item-box .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #f1f1f1;
+  padding: 10rpx 20rpx;
+}
+
+#zhengche .list .item-box .item .img-box {
+  width: 30vw;
+  height: 30vw;
+  margin-bottom: 20rpx;
+}
+
+#zhengche .list .item-box .item .img-box .img {
+  width: 100%;
+  height: 100%;
+}
+
+#zhengche .list .item-box .item .dec-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#zhengche .list .item-box .item .dec-box .text {
+  width: 100%;
+}
+
+#zhengche .list .item-box .item .dec-box .title {
+  font-weight: 600;
+  font-size: 36rpx;
+}
+
+#zhengche .list .item-box .item .dec-box .dec {
+  font-size: 20rpx;
+}

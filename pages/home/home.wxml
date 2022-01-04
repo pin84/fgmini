@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+
+
+
+<view id="home">
+
+  <view class="list">
+    <view class="item" wx:for="{{temImgList}}" wx:key="index">
+      <text class="iconfont icon-guanbi close" data-index='{{index}}'  bindtap="deleteMedia"></text>
+      <image wx:if="{{item.fileType == 'video'}}" bindtap='previewMedia' data-item='{{item}}' class="image" mode='aspectFit' src="{{item.thumbTempFilePath}}"></image>
+      <image wx:else="" class="image" bindtap='previewMedia' data-item='{{item}}' mode='aspectFit' src="{{item.tempFilePath}}"></image>
+    </view>
+    <view wx:if="{{temImgList.length < 9}}" class="item" bindtap='uploadImg'>
+      <text class="iconfont icon-jia uploadIcon" data-index='index'></text>
+    </view>
+  </view>
+
+  <button class="btn" bindtap='upload' type="primary">上传</button>
+
+  <view class="text">
+    注：最多只能传9张图片或视频
+  </view>
+
+</view>

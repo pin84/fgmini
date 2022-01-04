@@ -1,0 +1,22 @@
+<!--pages/zhengche/zhengche.wxml-->
+
+<view id="zhengche">
+
+  <view class="list">
+
+    <view  class="item-box" wx:for="{{articleList}}" wx:key="index">
+      <view bindtap="toDetail" data-article='{{item}}'  class="item">
+        <view class="img-box">
+          <image class="img" mode='aspectFit' src="{{item.cover}}"></image>
+        </view>
+
+        <view class="dec-box">
+          <text class="dec">{{item.time}}</text>
+          <text class="title text ellipsis">{{item.title}}</text>
+          <text class="dec text ellipsis">{{item.subTitle}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

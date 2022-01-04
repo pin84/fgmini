@@ -1,0 +1,28 @@
+#cur-article{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  .top{
+    flex: 0 0 120rpx;
+  }
+  .title{ 
+    text-align: center;
+    font-size: 48rpx;
+    font-weight: 600;
+  }
+  .time-box{
+    padding: 10rpx 20rpx;
+    font-size: 20rpx;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .content{
+    margin-top: 20rpx;
+    text-indent: 2em;
+    height: 100%;
+    overflow: scroll;
+    font-size: 28rpx;
+  }
+
+}

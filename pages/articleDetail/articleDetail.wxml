@@ -1,0 +1,20 @@
+<!--pages/articleDetail/articleDetail.wxml-->
+
+<view id='cur-article'>
+
+<view class="top">
+  <view class="title">{{curArticle.title}}</view>
+
+  <view class="time-box">
+    <text>{{curArticle.time}}</text>
+  </view>
+
+</view>
+
+
+
+  <view class="content">
+    {{curArticle.content}}
+  </view>
+
+</view>
