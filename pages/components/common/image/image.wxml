@@ -1,0 +1,10 @@
+<image
+  src="{{imgUrl || comOptions.errorImg}}"
+  mode="{{!imgUrl ? 'aspectFit' : comOptions.mode}}"
+  lazy-load="{{comOptions.lazyLoad}}"
+  show-menu-by-longpress="{{comOptions.longpress}}"
+  binderror="_imgError"
+  bindload="_imgLoad"
+  class="iimage img-class"
+/>
+

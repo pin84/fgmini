@@ -1,13 +1,12 @@
 // pages/zhengche/zhengche.js
 
-const article =require('./data')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    articleList: [ ]
+    articleList: []
   },
 
 
@@ -17,14 +16,14 @@ Page({
       url: '/pages/articleDetail/articleDetail',
       events: {
         // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
-        acceptDataFromOpenedPage: function(data) {
+        acceptDataFromOpenedPage: function (data) {
           console.log(data)
         },
-        someEvent: function(data) {
+        someEvent: function (data) {
           console.log(data)
         }
       },
-      success: function(res) {
+      success: function (res) {
         // 通过eventChannel向被打开页面传送数据
         res.eventChannel.emit('acceptDataFromOpenerPage', item)
       }
@@ -35,15 +34,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    article.forEach(item=>{
-      item.subTitle = item.content.slice(0,30)
+    let article = app.$mock.article || [];
+    article.forEach(item => {
+      item.subTitle = item.content.slice(0, 30)
     })
 
     console.log(article);
-      this.setData({
-        articleList:article
-      })
+    this.setData({
+      articleList: article
+    })
   },
 
   /**

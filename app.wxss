@@ -18,3 +18,66 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.ellipsis_more {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+view {
+  box-sizing: border-box;
+}
+.flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.f_r {
+  flex-direction: row;
+}
+.f_r_reverse {
+  flex-direction: row-reverse;
+}
+.f_c {
+  flex-direction: column;
+}
+.f_c_reverse {
+  flex-direction: column-reverse;
+}
+.f_j_center {
+  justify-content: center;
+}
+.f_j_end {
+  justify-content: flex-end;
+}
+.f_j_between {
+  justify-content: space-between;
+}
+.f_j_around {
+  justify-content: space-around;
+}
+.f_j_evenly {
+  justify-content: space-evenly;
+}
+.f_a_center {
+  align-items: center;
+}
+.f_a_end {
+  align-items: flex-end;
+}
+.f_a_start {
+  align-items: flex-start;
+}
+button {
+  box-sizing:border-box;
+  text-decoration:none;
+  -webkit-tap-highlight-color:rgba(255,255,255,0);
+  padding: 0;
+  background-color: rgba(255,255,255,0);
+  border-radius:0;
+  margin: 0;
+}
+button::after {
+  border: none;
+}

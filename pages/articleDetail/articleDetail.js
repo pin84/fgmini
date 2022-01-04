@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    curArticle:{}
+    curArticle: {}
   },
 
   /**
@@ -19,10 +19,10 @@ Page({
 
 
     const eventChannel = this.getOpenerEventChannel()
-    eventChannel.on('acceptDataFromOpenerPage', (data)=> {
+    eventChannel.on('acceptDataFromOpenerPage', (data) => {
       console.log(data.article);
       this.setData({
-        curArticle:data.article
+        curArticle: data.article
       })
 
 

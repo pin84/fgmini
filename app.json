@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/zhengche/zhengche",
     "pages/home/home",
-    "pages/index/index",
+    "pages/mine/mine",
     "pages/logs/logs",
     "pages/upload/upload",
     "pages/articleDetail/articleDetail"
@@ -22,6 +23,12 @@
     "backgroundColor": "#000",
     "list": [
       {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "text": "首页"
+      },
+      {
         "pagePath": "pages/zhengche/zhengche",
         "iconPath": "images/nav/home-off.png",
         "selectedIconPath": "images/nav/home-on.png",
@@ -34,7 +41,7 @@
         "text": "发布"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/mine/mine",
         "iconPath": "images/nav/home-off.png",
         "selectedIconPath": "images/nav/home-on.png",
         "text": "我的"
