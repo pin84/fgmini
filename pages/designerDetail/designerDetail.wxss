@@ -1,0 +1,75 @@
+.mine {
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+}
+
+.mine .userBox {
+  position: relative;
+  width: 100vw;
+  height: 600rpx;
+  background: rgba(230, 67, 64, 0.8);
+  padding: 210rpx 0 0;
+}
+
+.mine .userBox .userInfo {
+  padding: 0 42rpx;
+}
+
+.mine .userBox .userInfoImg {
+  width: 158rpx;
+  height: 158rpx;
+  border-radius: 50%;
+  margin-left: 36rpx;
+}
+
+.mine .userBox .userInfoName {
+  font-size: 48rpx;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.mine .userBox .descInfo {
+  margin-top: 42rpx;
+  padding: 0 42rpx;
+}
+
+.mine .userBox .descInfo .descItem {
+  display: inline-block;
+  margin-right: 60rpx;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.mine .userBox .descInfo .descItemValue {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+}
+
+.mine .userBox .descInfo .descItemName {
+  font-size: 24rpx;
+}
+
+.mine .messageBox {
+  width: 100vw;
+  position: relative;
+  border-radius: 60rpx 60rpx 0 0;
+  background: white;
+  margin: -60rpx auto 0;
+  padding: 60rpx 0 0;
+}
+
+.mine .messageBox .messageTitle {
+  width: 100%;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.mine .messageBox .messageContent {
+  padding: 0 32rpx 64rpx;
+}

@@ -2,6 +2,7 @@
 let list = [
     {name: 'article', path: './article.js'},
     {name: 'home', path: './home.js'},
+    {name: 'mine', path: './mine.js'},
 ]
 
 let listResult = {}

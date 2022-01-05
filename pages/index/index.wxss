@@ -75,7 +75,7 @@
 
 .home .navBox .navItemIcon {
   font-size: 64rpx;
-  color: orange;
+  color: #e64340;
   margin-bottom: 12rpx;
 }
 
@@ -114,8 +114,8 @@
 }
 
 .home .designerBox .designerItemImg {
-  width: 64rpx;
-  height: 64rpx;
+  width: 102rpx;
+  height: 102rpx;
   border-radius: 50%;
   margin-bottom: 12rpx;
 }

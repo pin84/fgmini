@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "customImg": "/pages/components/common/image/image"
+  }
+}

@@ -1,0 +1,27 @@
+<view class="mine">
+  <view class="userBox">
+    <view class="userInfo flex f_a_center f_j_end">
+      <view class="userInfoName">{{userInfo.nickName || ""}}</view>
+      <image class="userInfoImg" src="{{userInfo.avatarUrl || __img.common.avatar}}" mode="aspectFill" />
+    </view>
+    <view class="descInfo">
+        <view class="descItem">
+            <view class="descItemValue">126</view>
+            <view class="descItemName">作品</view>
+        </view>
+        <view class="descItem">
+            <view class="descItemValue">86</view>
+            <view class="descItemName">粉丝</view>
+        </view>
+    </view>
+  </view>
+  <view class="messageBox">
+    <view class="messageTitle">设计师介绍</view>
+    <view class="messageContent">
+        设计师是对设计事物的人的一种泛称。通常是在某个特定的专门领域创造或提供创意的工作，从事艺术与商业结合在一起的人。这些人通常是利用绘画或其他各种以视觉传达的方式来表现他们的工作或作品。
+        设计分为平面设计、空间设计、工业设计、珠宝设计、游戏设计、家具设计、建筑设计、室内设计、景观设计、服装设计、网页设计、系统设计、剧场设计、动漫设计、品牌设计、造型设计设计分为平面设计、
+        空间设计、工业设计、珠宝设计、游戏设计、家具设计、建筑设计、室内设计、景观设计、服装设计、网页设计、系统设计、剧场设计、动漫设计、品牌设计、造型设计设计分为平面设计、空间设计、工业设计、
+        珠宝设计、游戏设计、家具设计、建筑设计、室内设计、景观设计、服装设计、网页设计、系统设计、剧场设计、动漫设计、品牌设计、造型设计 三维设计师、杂志封面设计师、包装设计师、形象设计师等领域。
+    </view>
+  </view>
+</view>

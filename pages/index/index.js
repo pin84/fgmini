@@ -6,7 +6,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-        __img: app.$img.home,
+        __img: app.$img,
         showPage: false, // 是否显示页面
         swiperDot: 0, // 轮播图索引
         bannerInfos: app.$mock.home.bannerInfos || [], // 轮播图
@@ -25,7 +25,7 @@ Page({
     },
     // 页面点击事件
     pageClick(e) {
-        // if (!this.mixin_checkToken()) return false;
+        if (!this.mixin_checkToken()) return false;
         let target = e.currentTarget.dataset;
         switch (target.type) {
             case "swiper": // 轮播图

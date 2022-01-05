@@ -1,0 +1,49 @@
+.mine {
+    width: 100vw;
+    min-height: 100vh;
+    background: white;
+    .userBox {
+        position: relative;
+        width: 100vw;
+        height: 600rpx;
+        background: rgba($color: #e64340, $alpha: 0.8);
+        padding: 210rpx 0 0;
+        .userInfo {
+            padding: 0 42rpx;
+            &Img {
+                width: 158rpx;
+                height: 158rpx;
+                border-radius: 50%;
+                margin-right: 36rpx;
+            }
+            &Name {
+                font-size: 48rpx;
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+        }
+    }
+    .navBox {
+        width: 100vw;
+        position: relative;
+        border-radius: 60rpx 60rpx 0 0;
+        background: white;
+        margin: -60rpx auto 0;
+        padding: 60rpx 0 0;
+        .navItem {
+            padding: 0 32rpx;
+            height: 100rpx;
+            &Icon {
+                font-size: 38rpx;
+                margin-right: 32rpx;
+            }
+            &Name {
+                font-size: 36rpx;
+                color: #323233;
+            }
+            &More {
+                font-size: 28rpx;
+            }
+        }
+    }
+}

@@ -1,19 +1,58 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+.mine {
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.mine .userBox {
+  position: relative;
+  width: 100vw;
+  height: 600rpx;
+  background: rgba(230, 67, 64, 0.8);
+  padding: 210rpx 0 0;
+}
+
+.mine .userBox .userInfo {
+  padding: 0 42rpx;
+}
+
+.mine .userBox .userInfoImg {
+  width: 158rpx;
+  height: 158rpx;
   border-radius: 50%;
+  margin-right: 36rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.mine .userBox .userInfoName {
+  font-size: 48rpx;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.mine .navBox {
+  width: 100vw;
+  position: relative;
+  border-radius: 60rpx 60rpx 0 0;
+  background: white;
+  margin: -60rpx auto 0;
+  padding: 60rpx 0 0;
+}
+
+.mine .navBox .navItem {
+  padding: 0 32rpx;
+  height: 100rpx;
+}
+
+.mine .navBox .navItemIcon {
+  font-size: 38rpx;
+  margin-right: 32rpx;
+}
+
+.mine .navBox .navItemName {
+  font-size: 36rpx;
+  color: #323233;
+}
+
+.mine .navBox .navItemMore {
+  font-size: 28rpx;
 }

@@ -7,6 +7,7 @@
     {name: 'mount', path: './coreSrc/mount.js'},
     {name: 'img', path: './coreSrc/img.js'},
     {name: 'info', path: './coreSrc/info.js'},
+    {name: 'auth', path: './coreSrc/auth.js'},
     {name: 'mock', path: './mockSrc/index.js'},
 ]
 

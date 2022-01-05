@@ -1,0 +1,14 @@
+<view class="designer">
+    <view 
+        class="designerItem flex f_a_center" 
+        wx:for="{{12}}" 
+        wx:key="index" 
+        catchtap="pageClick"
+        data-type="detail"
+        data-item="{{item}}">
+        <view class="avatar">
+            <customImg src="https://i.postimg.cc/hvtrMQ8c/20210813150437.jpg" img-class="avatarImg" />
+        </view>
+        <text class="designerName">张三</text>
+    </view>
+</view>

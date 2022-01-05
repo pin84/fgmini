@@ -32,21 +32,21 @@
   <!-- 功能区 -->
   <view class="navBox flex f_j_center">
     <view 
-        class="navItem flex f_c f_a_center f_j_center" 
-        catchtap="pageClick"
-        data-type="nav"
-        data-item="{{item}}"
-        wx:for="{{iconInfos || []}}"
-        wx:key="index"
+      class="navItem flex f_c f_a_center f_j_center" 
+      catchtap="pageClick"
+      data-type="nav"
+      data-item="{{item}}"
+      wx:for="{{iconInfos || []}}"
+      wx:key="index"
     >
-        <text class="iconfont {{item.icon || ''}} navItemIcon" data-index='{{index}}'></text>
-        <text class="navItemName">{{item.name}}</text>
+      <text class="iconfont {{item.icon || ''}} navItemIcon" data-index='{{index}}'></text>
+      <text class="navItemName">{{item.name}}</text>
     </view>
     <view class="navItem navItem_fill" wx:for="{{3}}" wx:key="index"></view>
   </view>
   <!-- 设计师 -->
   <view class="titleBox flex f_a_center">
-    <image class="titleBoxIcon" src="{{__img.designerIcon}}" />
+    <image class="titleBoxIcon" src="{{__img.home.designerIcon}}" />
     <text>设计师</text>
   </view>
   <view class="designerBox flex f_j_center">
@@ -64,7 +64,7 @@
   </view>
   <!-- 文章 -->
   <view class="titleBox titleBox_12 flex f_a_center">
-    <image class="titleBoxIcon" src="{{__img.articleIcon}}" />
+    <image class="titleBoxIcon" src="{{__img.home.articleIcon}}" />
     <text>政策</text>
   </view>
   <view class="articleBox">

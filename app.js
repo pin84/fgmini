@@ -51,6 +51,8 @@ App({
   $info: CORE.info,
   // 图片相关
   $img: CORE.img,
+  // 登录及权限
+  $auth: CORE.auth,
   // MOCK
   $mock: CORE.mock,
 })

@@ -1,23 +1,25 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="mine">
+  <view class="userBox">
+    <view class="userInfo flex f_a_center" catchtap="pageClick" data-type="login">
+      <image class="userInfoImg" src="{{userInfo.avatarUrl || __img.common.avatar}}" mode="aspectFill" />
+      <view class="userInfoName">{{userInfo.nickName || "立即登录"}}</view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="navBox">
+    <view 
+      class="navItem flex f_a_center f_j_between" 
+      wx:for="{{menuInfos}}" 
+      wx:key="index" 
+      catchtap="pageClick"
+      data-type="nav"
+      data-item="{{item}}">
+      <view class="navItemLeft flex f_a_center">
+        <text class="iconfont {{item.icon || ''}} navItemIcon"></text>
+        <text class="navItemName">{{item.name || ""}}</text>
+      </view>
+      <view class="navItemRight flex f_a_center">
+        <text class="iconfont icon-youjiantou navItemMore"></text>
+      </view>
+    </view>
   </view>
 </view>

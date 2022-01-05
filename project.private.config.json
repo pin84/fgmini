@@ -1,0 +1,30 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/mine/mine",
+                    "pathName": "pages/mine/mine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/designerDetail/designerDetail",
+                    "pathName": "pages/designerDetail/designerDetail",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
